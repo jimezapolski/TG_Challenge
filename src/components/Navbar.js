@@ -17,7 +17,7 @@ const Navbar = () => {
             <Spacer />
             <ButtonGroup gap='2' >
                 <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><BellIcon   boxSize={20}/></Button>
-                <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><Icon as={FaUser} ml="2" boxSize={20}/></Button>
+                <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><Icon as={FaUser} ml="2" boxSize={17}/></Button>
             </ButtonGroup>
         </Flex>
         

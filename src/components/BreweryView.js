@@ -18,17 +18,17 @@ const BreweryView = ({ brewery }) => {
     return (
         <>
             <Flex minWidth='max-content' alignItems='center' gap='2' m={8} >
-            <Link href={`/`} >
-                <Box p='2'>
-                <Button _hover={{ color: "rgba(53, 64, 232, 1)" }} ><FaArrowLeft mt={24} color="white" boxSize={20}  /></Button>
-            </Box>
-            </Link>
-            <Spacer />
-            <ButtonGroup gap='2' >
-                <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><BellIcon   boxSize={20}/></Button>
-                <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><Icon as={FaUser} ml="2" boxSize={20}/></Button>
-            </ButtonGroup>
-        </Flex>
+                <Link href={`/`} >
+                    <Box p='2'>
+                        <Button _hover={{ color: "rgba(53, 64, 232, 1)" }} ><FaArrowLeft mt={24} color="white" boxSize={20} /></Button>
+                    </Box>
+                </Link>
+                <Spacer />
+                <ButtonGroup gap='2' >
+                    <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><BellIcon boxSize={20} /></Button>
+                    <Button colorScheme='teal' _hover={{ color: "rgba(53, 64, 232, 1)" }}><Icon as={FaUser} ml="2" boxSize={17} /></Button>
+                </ButtonGroup>
+            </Flex>
             <Text mt="20px" ml={12} fontFamily="Roboto" fontSize={32} fontWeight={700} >{name}</Text>
             <Flex direction="column" ml={12} mt="8" mb="8" fontSize="14px" >
                 <Text fontFamily="Roboto"> <Icon as={GrLocation} mr="2" /> {`${address_1}, ${city}, ${state}`}</Text>
@@ -54,40 +54,68 @@ const BreweryView = ({ brewery }) => {
             <Text m={12} fontFamily="Roboto" fontSize={24} fontWeight={700}> Opiniones</Text>
 
             <Box overflow="hidden" p="6" mb="12" ml={12}>
-                <Flex alignItems="center">
-                    <Image src={'../assets/img/persona1.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
-                    <Box>
-                        <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Cris</Text>
-                        <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
-                    </Box>
+                <Flex alignItems="center" justifyContent="space-between">
+                    <Flex alignItems="center">
+                        <Image src={'../assets/img/persona1.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
+                        <Box>
+                            <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Cris</Text>
+                        </Box>
+                    </Flex>
+                    <Link>
+                        <Text fontFamily="Roboto" fontSize={12} color="#E41AD6" ml="auto">Responder</Text>
+                    </Link>
                 </Flex>
+                <Box mt={4}>
+                    <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
+                </Box>
             </Box>
             <Box overflow="hidden" p="6" mb="12" ml={12}>
-                <Flex alignItems="center">
-                    <Image src={'../assets/img/persona2.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
-                    <Box>
-                        <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Cris</Text>
-                        <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
-                    </Box>
+                <Flex alignItems="center" justifyContent="space-between">
+                    <Flex alignItems="center">
+                        <Image src={'../assets/img/persona2.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
+                        <Box>
+                            <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Julia</Text>
+                        </Box>
+                    </Flex>
+                    <Link>
+                        <Text fontFamily="Roboto" fontSize={12} color="#E41AD6" ml="auto">Responder</Text>
+                    </Link>
                 </Flex>
+                <Box mt={4}>
+                    <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
+                </Box>
             </Box>
             <Box overflow="hidden" p="6" mb="12" ml={12}>
-                <Flex alignItems="center">
-                    <Image src={'../assets/img/persona1.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
-                    <Box>
-                        <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Cris</Text>
-                        <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
-                    </Box>
+                <Flex alignItems="center" justifyContent="space-between">
+                    <Flex alignItems="center">
+                        <Image src={'../assets/img/persona2.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
+                        <Box>
+                            <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Dina</Text>
+                        </Box>
+                    </Flex>
+                    <Link>
+                        <Text fontFamily="Roboto" fontSize={12} color="#E41AD6" ml="auto">Responder</Text>
+                    </Link>
                 </Flex>
+                <Box mt={4}>
+                    <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
+                </Box>
             </Box>
             <Box overflow="hidden" p="6" mb="12" ml={12}>
-                <Flex alignItems="center">
-                    <Image src={'../assets/img/persona2.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
-                    <Box>
-                        <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Cris</Text>
-                        <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
-                    </Box>
+                <Flex alignItems="center" justifyContent="space-between">
+                    <Flex alignItems="center">
+                        <Image src={'../assets/img/persona1.jpeg'} w={38.47} h={38.47} borderRadius='100%' boxSize="50px" mr="4" />
+                        <Box>
+                            <Text fontFamily="Roboto" fontWeight="bold" mt={4} mb={8} ml={4}>Robert</Text>
+                        </Box>
+                    </Flex>
+                    <Link>
+                        <Text fontFamily="Roboto" fontSize={12} color="#E41AD6" ml="auto">Responder</Text>
+                    </Link>
                 </Flex>
+                <Box mt={4}>
+                    <Text fontFamily="Roboto" ml={4}>Me encantan este tipo de cervezas! La velocidad de wifi es muy bue...</Text>
+                </Box>
             </Box>
             <Flex justifyContent="center">
                 <Link href={`/`} >
@@ -103,7 +131,7 @@ const BreweryView = ({ brewery }) => {
                         mb={8}
                         _hover={{
                             transform: "scale(1.1)"
-                          }}
+                        }}
                     >Reservar mesa</Button>
                 </Link>
             </Flex>
@@ -111,7 +139,7 @@ const BreweryView = ({ brewery }) => {
             <Flex justifyContent="center" mb={60}>
                 <Link href={`/`} >
                     <Button mt="4"
-                    mb={12}
+                        mb={12}
                         variant="outline"
                         textAlign="center"
                         w={342}
@@ -122,11 +150,11 @@ const BreweryView = ({ brewery }) => {
                         borderColor={['linear-gradient(90deg, #3540E8 0%, #E41AD6 100%)', 'linear-gradient(90deg, #3540E8 0%, #E41AD6 100%)']}
                         _hover={{
                             transform: "scale(1.1)"
-                          }}
+                        }}
                     >Opciones de transporte</Button>
                 </Link>
             </Flex>
-<Footer/>
+            <Footer />
         </>
     )
 }
